@@ -57,7 +57,7 @@ button {
 }
 .button_black {
     font-size: 12px;
-    padding: 10px 40px;
+    padding: 12px 40px;
     border: 2px solid #ffffff;
     border-radius: 20px;
     color: #ffffff;
@@ -71,7 +71,7 @@ button {
     text-transform: uppercase;
 }
 .bold {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .color_white {
@@ -90,11 +90,12 @@ header {
     background-color: #000000;
 }
 header .list_block li {
+    line-height: 30px;
     padding-left: 12px;
-    margin: 7px 0;
+    margin: 5px 0;
 }
 header .list_block li a {
-    font-size: 12px;
+    font-size: 13px;
     color: #707070;
 }
 header .list_block li a:hover {
@@ -131,7 +132,7 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     display: none;
 }
 #navigation_top .list_block li img {
-    width: 20px;
+    width: 23px;
     margin-right: 4px;
 }
 
@@ -139,10 +140,13 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     margin-top: 22px;
 }
 #playlist h4 {
-    font-size: 13px;
+    font-size: 15px;
+}
+#playlist > .list_block > li:nth-child(2) a {
+    font-size: 15px;
 }
 #playlist .fas.fa-plus {
-    font-size: 20px;
+    font-size: 23px;
     padding: 5px;
     margin-right: 7px;
     color: #000000;
@@ -161,7 +165,7 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     background-color: #000000;
 }
 #profile .list_block li:first-child a {
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     border-bottom: 2px solid #282828;
 }
 #profile .list_block li img {
@@ -174,10 +178,10 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     background-color: #707070;
 }
 #profile #img_download {
-    width: 13px;
+    width: 15px;
 }
 #profile .list_block li div {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* MAIN */
@@ -207,9 +211,17 @@ main {
     text-align: center;
 }
 #principal_section nav .list_inline li {
-    margin: 0 15px;
+    margin: 0 12px 35px 12px;
+}
+#principal_section nav .list_inline li.active::after {
+    content: "";
+    margin: 0 auto;
+    width: 50px;
+    height: 2px;
+    background-color: #adff2f;
 }
 #principal_section nav .list_inline li a {
+    font-size: 13px;
     color: #707070;
 }
 #principal_section nav .list_inline li a:hover {
@@ -227,19 +239,19 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     
 
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     
 
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     
     /* HEADER */
     header {
@@ -289,45 +301,45 @@ footer {
 }
 
 /* VERTICAL SCROLL */
-@media screen and (max-height: 542px) {
+@media screen and (max-height: 635px) {
+    
+    #scroll {
+        height: 34vh;
+    }
+
+}
+@media screen and (max-height: 625px) {
     
     #scroll {
         height: 32vh;
     }
 
 }
-@media screen and (max-height: 516px) {
+@media screen and (max-height: 610px) {
     
     #scroll {
         height: 30vh;
     }
 
 }
-@media screen and (max-height: 501px) {
+@media screen and (max-height: 605px) {
     
     #scroll {
         height: 28vh;
     }
 
 }
-@media screen and (max-height: 487px) {
+@media screen and (max-height: 570px) {
     
     #scroll {
         height: 26vh;
     }
 
 }
-@media screen and (max-height: 473px) {
+@media screen and (max-height: 555px) {
     
     #scroll {
         height: 24vh;
-    }
-
-}
-@media screen and (max-height: 461px) {
-    
-    #scroll {
-        height: 22vh;
     }
 
 }
