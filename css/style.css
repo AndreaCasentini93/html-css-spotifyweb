@@ -37,6 +37,24 @@ body {
     transition: color .2s;
 }
 
+button {
+    border: unset;
+    color: unset;
+    background-color: unset;
+    cursor: pointer;
+}
+.button_black {
+    font-size: 13px;
+    padding: 10px 40px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: transform .2s;
+}
+.button_black:hover {
+    transform: scale(1.1);
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -161,11 +179,13 @@ main {
     overflow-y: auto;
 }
 #upgrade {
+    justify-content: flex-end;
+    align-items: center;
     top: 0;
     left: 170px;
     width: calc(100% - 170px);
     height: 70px;
-    padding: 20px;
+    padding: 0 20px;
     background-color: #000000b3;
 }
 
