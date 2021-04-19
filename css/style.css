@@ -67,25 +67,39 @@ header .list_block li a {
     font-size: 12px;
     color: #707070;
 }
+header .list_block li a:hover {
+    color: #ffffff;
+}
 header .list_block li.active {
     border-left: 3px solid #adff2f;
     color: #ffffff;
 }
-header .list_block li a:hover:not(.active) {
-    color: white;
+header .list_block li.active a {
+    color: #ffffff;
 }
-header .list_block li a img:not(#img_logo_spotify) {
-    filter: invert(50%);
-}
-header .list_block li a:hover img:not(#img_logo_spotify) {
+header .list_block li.active img {
     filter: invert(0);
 }
+header .list_block li.active a img:not(#img_logo_spotify, #img_logo_spotify_2) {
+    filter: invert(0);
+}
+header .list_block li a img:not(#img_logo_spotify, #img_logo_spotify_2) {
+    filter: invert(50%);
+    transition: filter .2s;
+}
+header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
+    filter: invert(0);
+}
+
 
 #navigation_top .list_block li:first-child {
     margin-bottom: 15px;
 }
 #navigation_top #img_logo_spotify {
     width: 110px;
+}
+#navigation_top #img_logo_spotify_2 {
+    display: none;
 }
 #navigation_top .list_block li img {
     width: 20px;
@@ -104,11 +118,20 @@ header .list_block li a:hover img:not(#img_logo_spotify) {
     margin-right: 7px;
     color: #000000;
     background-color: #a3a3a3;
+    transition: background-color .2s;
 }
 #playlist a:hover .fas.fa-plus {
     background-color: #ffffff;
 }
 
+#scroll {
+    height: 35vh;
+    overflow-y: auto;
+}
+
+#profile {
+    background-color: #000000;
+}
 #profile .list_block li:first-child a {
     padding-bottom: 5px;
     border-bottom: 2px solid #282828;
@@ -175,24 +198,92 @@ footer {
     
     /* HEADER */
     header {
-        width: 55px;
+        align-items: center;
+        width: 45px;
+        padding: 1px;
+    }
+    header .list_block li {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
     }
     header .hidden {
         display: none;
     }
+    header .list_block li.active {
+        border-left: none;
+    }
+    header .list_block li a img:not(#img_logo_spotify, #img_logo_spotify_2) {
+        filter: invert(20%);
+    }
 
-    #img_logo_spotify_2 {
+    #navigation_top #img_logo_spotify {
+        display: none;
+    }
+    #navigation_top #img_logo_spotify_2 {
         display: inline-block;
+    }
+
+    #profile .list_block li:first-child a {
+        border-bottom: none;
+    }
+    #profile .list_block li img {
+        margin-right: 0;
     }
 
     /* MAIN */
     main {
-        width: calc(100% - 55px);
-        margin-left: 55px;
+        width: calc(100% - 45px);
+        margin-left: 45px;
     }
     #upgrade {
-        left: 55px;
-        width: calc(100% - 55px);
+        left: 45px;
+        width: calc(100% - 45px);
     }
 
 }
+
+/* VERTICAL SCROLL */
+@media screen and (max-height: 542px) {
+    
+    #scroll {
+        height: 32vh;
+    }
+
+}
+@media screen and (max-height: 516px) {
+    
+    #scroll {
+        height: 30vh;
+    }
+
+}
+@media screen and (max-height: 501px) {
+    
+    #scroll {
+        height: 28vh;
+    }
+
+}
+@media screen and (max-height: 487px) {
+    
+    #scroll {
+        height: 26vh;
+    }
+
+}
+@media screen and (max-height: 473px) {
+    
+    #scroll {
+        height: 24vh;
+    }
+
+}
+@media screen and (max-height: 461px) {
+    
+    #scroll {
+        height: 22vh;
+    }
+
+}
+/* /VERTICAL SCROLL */

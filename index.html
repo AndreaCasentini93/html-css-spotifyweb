@@ -27,25 +27,26 @@
                     <ul class="list_block">
                         <li>
                             <a href="#principal_section">
-                                <img id="img_logo_spotify" src="img/logo.svg" alt="Image Logo Spotify">
+                                <img id="img_logo_spotify" class="hidden" src="img/logo.svg" alt="Image Logo Spotify">
+                                <img id="img_logo_spotify_2" src="img/logo-small.svg" alt="Image Logo Spotify 2">
                             </a>
                         </li>
                         <li class="active">
                             <a href="#" class="flex_container vertical_centering">
                                 <img src="img/home.svg" alt="Image Home">
-                            <span>Home</span>
+                            <span class="hidden">Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="flex_container vertical_centering">
                                 <img src="img/search.svg" alt="Image Search">
-                            <span>Cerca</span>
+                            <span class="hidden">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="flex_container vertical_centering">
                                 <img src="img/libreria.svg" alt="Image Library">
-                            <span>La tua libreria</span>
+                            <span class="hidden">La tua libreria</span>
                             </a>
                         </li>
                     </ul>
@@ -53,36 +54,38 @@
                 <!-- /NAVIGATION TOP -->
 
                 <!-- PLAYLIST -->
-                <nav id="playlist">
-                    <ul class="list_block">
+                <nav id="playlist" class="hidden">
+                    <ol class="list_block">
                         <li>
                             <h4 class="uppercase color_white">Playlist</h4>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-plus"></i>Crea Playlist</a>
                         </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                        <li>
-                            <a href="#">Nome Playlist</a>
-                        </li>
-                    </ul>
+                        <ul id="scroll">
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Nome Playlist</a>
+                            </li>
+                        </ul>
+                    </ol>
                 </nav>
                 <!-- /PLAYLIST -->
             </div>
@@ -94,13 +97,13 @@
                     <li>
                         <a href="#" class="flex_container vertical_centering">
                             <img id="img_download" src="img/download.svg" alt="Image Download">
-                            <span>Installa app</span>
+                            <span class="hidden">Installa app</span>
                         </a>
                     </li>
                     <li>
                         <div class="flex_container vertical_centering">
                             <img id="img_profile" src="img/profile.svg" alt="Image Profile">
-                            <span class="bold color_white">John Doe</span>
+                            <span class="bold color_white hidden">John Doe</span>
                         </div>
                     </li>
                 </ul>
