@@ -122,6 +122,7 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     filter: invert(0);
 }
 
+/* HEADER NAVIGATION TOP */
 #navigation_top .list_block li:first-child {
     margin-bottom: 15px;
 }
@@ -136,6 +137,7 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     margin-right: 4px;
 }
 
+/* HEADER PLAYLIST */
 #playlist {
     margin-top: 22px;
 }
@@ -161,6 +163,7 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     overflow-y: auto;
 }
 
+/* HEADER PROFILE */
 #profile {
     background-color: #000000;
 }
@@ -194,6 +197,8 @@ main {
     background-color: #141922;
     overflow-y: auto;
 }
+
+/* MAIN UPGRADE */
 #upgrade {
     justify-content: flex-end;
     align-items: center;
@@ -207,25 +212,63 @@ main {
     white-space: nowrap;
 }
 
-#principal_section nav {
+/* MAIN MENU */
+#menu {
     text-align: center;
 }
-#principal_section nav .list_inline li {
-    margin: 0 12px 35px 12px;
+#menu .list_inline li {
+    margin-right: 12px;
+    margin-bottom: 30px;
+    margin-left: 12px;
 }
-#principal_section nav .list_inline li.active::after {
-    content: "";
-    margin: 0 auto;
-    width: 50px;
-    height: 2px;
-    background-color: #adff2f;
-}
-#principal_section nav .list_inline li a {
+#menu .list_inline li a {
     font-size: 13px;
     color: #707070;
 }
-#principal_section nav .list_inline li a:hover {
+#menu .list_inline li a:hover {
     color: #ffffff;
+}
+
+/* MAIN BOX IMAGE */
+#principal_section > section:not(:first-of-type) {
+    padding-top: 40px;
+}
+#principal_section h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#principal_section h4 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+#principal_section h6 {
+    font-size: 13px;
+    font-weight: 600;
+}
+#principal_section h2, h4 {
+    font-weight: 800;
+    color: #ffffff;
+}
+#principal_section .flex_container {
+    flex-wrap: wrap;
+}
+#principal_section .box_img {
+    text-align: center;
+    width: calc((100% / 6) - 16px);
+    margin: 20px 8px 0 8px;
+}
+#principal_section .box_img:first-child {
+    width: calc((100% / 6) - 16px);
+    margin-right: 8px;
+    margin-left: 0;
+}
+#principal_section .box_img img {
+    width: 100%;
+}
+
+/* MAIN ARTISTS */
+#artists .box_img img {
+    border-radius: 50%;
 }
 
 /* FOOTER */
@@ -299,6 +342,7 @@ footer {
     }
 
 }
+
 
 /* VERTICAL SCROLL */
 @media screen and (max-height: 635px) {
