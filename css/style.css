@@ -61,6 +61,12 @@ header {
     padding-left: 12px;
     margin: 7px 0;
 }
+#navigation .list_block li a img:not(#logo_spotify) {
+    filter: invert(50%);
+}
+#navigation .list_block li a:hover img:not(#logo_spotify) {
+    filter: invert(0);
+}
 #navigation .list_block li a {
     font-size: 12px;
     color: #707070;
