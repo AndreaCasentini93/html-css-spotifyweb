@@ -24,8 +24,31 @@ html {
     display: flex;
 }
 
+.list_block {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list_block li {
+    margin: 10px 0;
+}
+.list_block li a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.color_white {
+    color: #ffffff;
+}
+
 /* HEADER */
 header {
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 200px;
