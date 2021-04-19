@@ -284,13 +284,29 @@ footer {
 /* MEDIA QUERIES */
 @media screen and (max-width: 1199px) {
     
+    /* MAIN */
 
+    /* MAIN BOX IMAGE */
+    #principal_section .box_img {
+        width: calc((100% / 4) - 16px);
+    }
+    #principal_section .box_img:first-child {
+        width: calc((100% / 4) - 16px);
+    }
 
 }
 
 @media screen and (max-width: 991px) {
     
+    /* MAIN */
 
+    /* MAIN BOX IMAGE */
+    #principal_section .box_img {
+        width: calc((100% / 2) - 16px);
+    }
+    #principal_section .box_img:first-child {
+        width: calc((100% / 2) - 16px);
+    }
 
 }
 
