@@ -8,10 +8,10 @@
 html {
     scroll-behavior: smooth;
 }
- body {
+body {
     font-family: 'Montserrat', sans-serif;
     color: #707070;
- }
+}
 
 .p_relative {
     position: relative;
@@ -29,12 +29,9 @@ html {
     padding: 0;
     margin: 0;
 }
-.list_block li {
-    margin: 10px 0;
-}
 .list_block li a {
     text-decoration: none;
-    color: #707070;
+    transition: color .2s;
 }
 
 .uppercase {
@@ -51,27 +48,57 @@ header {
     justify-content: space-between;
     top: 0;
     left: 0;
-    width: 200px;
-    height: calc(100vh - 90px);
-    padding: 20px;
+    width: 170px;
+    height: calc(100vh - 70px);
+    padding: 1px;
     background-color: #000000;
+}
+
+#navigation .list_block li {
+    padding-left: 12px;
+    margin: 7px 0;
+}
+#navigation .list_block li a {
+    font-size: 12px;
+    color: #707070;
+}
+#navigation .list_block li.active {
+    border-left: 3px solid #adff2f;
+    color: #ffffff;
+}
+#navigation .list_block li a:hover:not(.active) {
+    color: white;
+}
+
+#navigation_top .list_block li:first-child {
+    margin-bottom: 15px;
+}
+#navigation_top #logo_spotify {
+    width: 110px;
+}
+#navigation_top .list_block li a > img {
+    width: 20px;
+}
+
+#playlist {
+    margin-top: 30px;
 }
 
 /* MAIN */
 main {
-    width: calc(100% - 200px);
-    height: calc(100vh - 90px);
-    padding: 110px 20px 20px 20px;
-    margin-left: 200px;
-    margin-bottom: 90px;
+    width: calc(100% - 170px);
+    height: calc(100vh - 70px);
+    padding: 90px 20px 20px 20px;
+    margin-left: 170px;
+    margin-bottom: 70px;
     background-color: #141922;
     overflow-y: auto;
 }
 #upgrade {
     top: 0;
-    left: 200px;
-    width: calc(100% - 200px);
-    height: 90px;
+    left: 170px;
+    width: calc(100% - 170px);
+    height: 70px;
     padding: 20px;
     background-color: #000000b3;
 }
@@ -81,7 +108,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 70px;
     padding: 20px;
     background-color: #282828;
 }
