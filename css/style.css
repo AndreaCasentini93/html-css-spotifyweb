@@ -27,6 +27,18 @@ body {
     align-items: center;
 }
 
+.list_inline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list_inline li {
+    display: inline-block;
+}
+.list_inline li a {
+    text-decoration: none;
+    transition: color .2s;
+}
 .list_block {
     list-style: none;
     padding: 0;
@@ -127,7 +139,7 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
     margin-top: 22px;
 }
 #playlist h4 {
-    font-size: 14px;
+    font-size: 13px;
 }
 #playlist .fas.fa-plus {
     font-size: 20px;
@@ -189,6 +201,19 @@ main {
     background-color: #000000b3;
     overflow-x: hidden;
     white-space: nowrap;
+}
+
+#principal_section nav {
+    text-align: center;
+}
+#principal_section nav .list_inline li {
+    margin: 0 15px;
+}
+#principal_section nav .list_inline li a {
+    color: #707070;
+}
+#principal_section nav .list_inline li a:hover {
+    color: #ffffff;
 }
 
 /* FOOTER */
