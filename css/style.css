@@ -554,36 +554,56 @@ footer > div {
         width: calc(100% - 45px);
     }
 
+    /* MAIN MENU */
+    #menu .list_inline li a {
+        font-size: 11px;
+    }
+
     /* FOOTER */
+    footer > div {
+        padding: 5px;
+    }
 
     /* FOOTER SIDE LEFT */
     #footer_side_left img {
         height: 22px;
     }
     #footer_side_left .footer_box_text {
-        font-size: 11px;
+        font-size: 10px;
         white-space: unset;
     }
     #footer_side_left a {
-        font-size: 10px;
+        font-size: 9px;
     }
 
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 624px) {
     
     /* FOOTER */
-    footer .hidden {
-        display: none;
-    }
-    [id*="footer_side_"] {
-        width: unset;
-    }
 
     /* FOOTER SIDE LEFT */
-    #footer_side_left .footer_box_theme {
-        margin-left: 10px;
+    #footer_side_left button {
+        margin: 0 5px;
+        font-size: 13px;
     }
+
+    /* FOOTER SIDE RIGHT */
+    #footer_side_right button {
+        font-size: 11px;
+    }
+    #footer_side_right > button {
+        margin-right: 8px;
+     }
+    #footer_side_right #volume .range {
+        width: 45px;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    
+    /* FOOTER */
 
     /* FOOTER CENTER */
     #footer_center {
@@ -601,16 +621,28 @@ footer > div {
     #footer_center #play:hover {
         font-size: 30px;
     }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    /* FOOTER */
+    footer .hidden {
+        display: none;
+    }
+    [id*="footer_side_"] {
+        width: unset;
+    }
     
     /* FOOTER SIDE RIGHT */
     #footer_side_right #volume {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
 }
 
 
-/* VERTICAL SCROLL */
+/* VERTICAL SCROLL RESPONSIVE */
 @media screen and (max-height: 635px) {
     
     #scroll {
@@ -653,9 +685,9 @@ footer > div {
     }
 
 }
-/* /VERTICAL SCROLL */
+/* /VERTICAL SCROLL RESPONSIVE */
 
-/* FOOTER CENTER */
+/* FOOTER CENTER RESPONSIVE */
 @media screen and (max-width: 960px) {
     
     /* FOOTER */
@@ -704,4 +736,4 @@ footer > div {
     } 
 
 }
-/* /FOOTER CENTER */
+/* /FOOTER CENTER RESPONSIVE */
