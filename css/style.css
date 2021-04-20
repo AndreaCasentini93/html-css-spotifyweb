@@ -564,18 +564,6 @@ footer > div {
         padding: 5px;
     }
 
-    /* FOOTER SIDE LEFT */
-    #footer_side_left img {
-        height: 22px;
-    }
-    #footer_side_left .footer_box_text {
-        font-size: 10px;
-        white-space: unset;
-    }
-    #footer_side_left a {
-        font-size: 9px;
-    }
-
 }
 
 @media screen and (max-width: 624px) {
@@ -583,8 +571,18 @@ footer > div {
     /* FOOTER */
 
     /* FOOTER SIDE LEFT */
+    #footer_side_left img {
+        height: 22px;
+    }
+    #footer_side_left .footer_box_text {
+        font-size: 11px;
+        white-space: unset;
+    }
+    #footer_side_left a {
+        font-size: 10px;
+    }
     #footer_side_left button {
-        margin: 0 5px;
+        margin: 0 8px;
         font-size: 13px;
     }
 
@@ -593,7 +591,7 @@ footer > div {
         font-size: 11px;
     }
     #footer_side_right > button {
-        margin-right: 8px;
+        margin-right: 10px;
      }
     #footer_side_right #volume .range {
         width: 45px;
