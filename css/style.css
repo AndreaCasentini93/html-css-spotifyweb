@@ -233,7 +233,7 @@ main {
     font-size: 13px;
     color: #707070;
 }
-#menu .list_inline li:not(.active) a:hover {
+#menu .list_inline li a:hover {
     color: #ffffff;
 }
 
