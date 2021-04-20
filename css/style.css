@@ -313,6 +313,7 @@ footer {
     height: 70px;
     padding: 20px;
     background-color: #282828;
+    z-index: 2;
 }
 
 /* MEDIA QUERIES */
