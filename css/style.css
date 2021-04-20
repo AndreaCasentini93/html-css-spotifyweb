@@ -207,7 +207,7 @@ main {
     width: calc(100% - 170px);
     height: 70px;
     padding: 0 20px;
-    background-color: #000000b3;
+    background-color: #00000080;
     overflow-x: hidden;
     white-space: nowrap;
     z-index: 1;
