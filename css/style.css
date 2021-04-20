@@ -321,9 +321,10 @@ footer {
 footer > div {
     height: 100%;
     padding: 10px;
+    overflow: hidden;
     border: 1px solid #adff2f;
 }
-footer .footer_side {
+footer [class*="footer_side_"] {
     width: 170px;
 }
 footer .footer_center {
@@ -407,7 +408,7 @@ footer .footer_center {
     }
 
     /* FOOTER */
-    footer .footer_side {
+    footer [class*="footer_side_"] {
         width: calc(25% - 5px);
     }
     footer .footer_center {
