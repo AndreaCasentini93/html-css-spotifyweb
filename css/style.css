@@ -352,7 +352,6 @@ footer > div {
 }
 #footer_center {
     width: 58%;
-    border: 1px solid #adff2f;
 }
 
 /* FOOTER SIDE LEFT */
@@ -425,7 +424,7 @@ footer > div {
     width: 70%;
 }
 #footer_center #playback .range_content {
-    width: 40%;
+    width: 20%;
 }
 #footer_center #playback span {
     font-size: 11px;
