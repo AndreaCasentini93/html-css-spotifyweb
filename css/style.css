@@ -252,12 +252,14 @@ main {
 #principal_section h6 {
     font-size: 13px;
     font-weight: 600;
+    color: #707070;
 }
 #principal_section h2, h4 {
     color: #ffffff;
 }
 #principal_section p {
     font-size: 13px;
+    color: #707070;
 }
 #principal_section .flex_container {
     flex-wrap: wrap;
@@ -274,6 +276,26 @@ main {
 }
 #principal_section .box_img img {
     width: 100%;
+    transition: opacity .3s;
+}
+#principal_section .box_img {
+    display: block;
+    text-decoration: none;
+}
+#principal_section .box_img:hover img {
+    opacity: 0.3;
+}
+#principal_section .box_img:hover .far.fa-play-circle {
+    opacity: 1;
+}
+#principal_section .far.fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    opacity: 0;
+    transition: opacity .3s;
 }
 
 /* MAIN ARTISTS */
