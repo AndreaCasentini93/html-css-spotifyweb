@@ -393,7 +393,7 @@ footer > div {
     height: 100%;
     border-radius: 5px;
     background-color: #c1c1c1;
-    transition: background-color .1s;
+    transition: background-color .15s;
 }
 #footer_side_right #volume .range_content {
     width: 40%;
@@ -411,7 +411,7 @@ footer > div {
     border-radius: 50%;
     background-color: #ffffff;
     opacity: 0;
-    transition: opacity .1s;
+    transition: opacity .15s;
 }
 #footer_side_right #volume:hover .range_circle {
     opacity: 1;
