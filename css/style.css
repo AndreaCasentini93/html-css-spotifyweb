@@ -326,42 +326,50 @@ footer > div {
     padding: 10px;
     border: 1px solid #adff2f;
 }
-footer [class*="footer_side_"] {
+[id*="footer_side_"] {
     width: 200px;
 }
-footer .footer_center {
+#footer_center {
     width: 58%;
 }
-footer .footer_side_left #footer_box_theme {
+
+/* FOOTER SIDE LEFT */
+#footer_side_left .footer_box_theme {
     justify-content: space-between;
     align-items: center;
 }
-footer .footer_side_left #footer_box_text {
+#footer_side_left .footer_box_text {
     flex-direction: column;
     justify-content: center;
 }
-footer .footer_side_left img {
+#footer_side_left img {
     height: 35px;
     margin-right: 10px;
 }
-footer .footer_side_left #footer_box_text {
+#footer_side_left .footer_box_text {
     font-size: 13px;
     white-space: nowrap;
 }
-footer .footer_side_left a {
+#footer_side_left a {
     text-decoration: none;
     font-size: 11px;
     color: #707070;
 }
-footer .footer_side_left a:hover {
+#footer_side_left a:hover {
     text-decoration: underline;
     color: #ffffff;
 }
-footer .footer_side_left button {
+#footer_side_left button {
     margin: 0 5px;
+    font-size: 16px;
 }
-footer .footer_side_left button:hover {
+#footer_side_left button:hover {
     color: #ffffff;
+}
+
+/* FOOTER SIDE RIGHT */
+#footer_side_right {
+    
 }
 
 /* MEDIA QUERIES */
@@ -392,11 +400,11 @@ footer .footer_side_left button:hover {
     }
 
     /* FOOTER */
-    footer .footer_center {
+    footer #footer_center {
         max-width: calc(58% - 10px);
         margin: 0 5px;
     } 
-    footer .footer_side_left #footer_box_button {
+    footer #footer_side_left .footer_box_button {
         flex-direction: column;
     }
 
@@ -450,14 +458,14 @@ footer .footer_side_left button:hover {
     }
 
     /* FOOTER */
-    footer .footer_side_left img {
+    #footer_side_left img {
         height: 22px;
     }
-    footer .footer_side_left #footer_box_text {
+    #footer_side_left .footer_box_text {
         font-size: 11px;
         white-space: unset;
     }
-    footer .footer_side_left a {
+    #footer_side_left a {
         font-size: 10px;
     }
 
@@ -513,7 +521,7 @@ footer .footer_side_left button:hover {
 @media screen and (max-width: 960px) {
     
     /* FOOTER */
-    footer .footer_center {
+    #footer_center {
         max-width: calc(48% - 10px);
         margin: 0 5px;
     } 
@@ -522,7 +530,7 @@ footer .footer_side_left button:hover {
 @media screen and (max-width: 960px) {
     
     /* FOOTER */
-    footer .footer_center {
+    #footer_center {
         max-width: calc(56% - 10px);
         margin: 0 5px;
     } 
@@ -531,7 +539,7 @@ footer .footer_side_left button:hover {
 @media screen and (max-width: 910px) {
     
     /* FOOTER */
-    footer .footer_center {
+    #footer_center {
         max-width: calc(54% - 10px);
         margin: 0 5px;
     } 
@@ -540,7 +548,7 @@ footer .footer_side_left button:hover {
 @media screen and (max-width: 878px) {
     
     /* FOOTER */
-    footer .footer_center {
+    #footer_center {
         max-width: calc(52% - 10px);
         margin: 0 5px;
     } 
@@ -549,7 +557,7 @@ footer .footer_side_left button:hover {
 @media screen and (max-width: 846px) {
     
     /* FOOTER */
-    footer .footer_center {
+    #footer_center {
         max-width: calc(50% - 10px);
         margin: 0 5px;
     } 
@@ -558,7 +566,7 @@ footer .footer_side_left button:hover {
 @media screen and (max-width: 806px) {
     
     /* FOOTER */
-    footer .footer_center {
+    #footer_center {
         max-width: calc(48% - 10px);
         margin: 0 5px;
     } 
