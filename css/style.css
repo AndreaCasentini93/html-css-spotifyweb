@@ -321,13 +321,13 @@ footer {
 footer > div {
     height: 100%;
     padding: 10px;
-    border: 1px solid #adff2f;
 }
 [id*="footer_side_"] {
     width: 200px;
 }
 #footer_center {
     width: 58%;
+    border: 1px solid #adff2f;
 }
 
 /* FOOTER SIDE LEFT */
@@ -443,11 +443,11 @@ footer > div {
     }
 
     /* FOOTER */
-    footer #footer_center {
+    #footer_center {
         max-width: calc(58% - 10px);
         margin: 0 5px;
     } 
-    footer #footer_side_left .footer_box_button {
+    #footer_side_left .footer_box_button {
         flex-direction: column;
     }
 
@@ -476,6 +476,7 @@ footer > div {
         filter: invert(20%);
     }
 
+    /* HEADER NAVIGATION TOP */
     #navigation_top #img_logo_spotify {
         display: none;
     }
@@ -483,6 +484,7 @@ footer > div {
         display: inline-block;
     }
 
+    /* HEADER PROFILE */
     #profile .list_block li:first-child a {
         border-bottom: none;
     }
@@ -495,12 +497,16 @@ footer > div {
         width: calc(100% - 45px);
         margin-left: 45px;
     }
+
+    /* MAIN UPGRADE */
     #upgrade {
         left: 45px;
         width: calc(100% - 45px);
     }
 
     /* FOOTER */
+
+    /* FOOTER SIDE LEFT */
     #footer_side_left img {
         height: 22px;
     }
@@ -510,6 +516,33 @@ footer > div {
     }
     #footer_side_left a {
         font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    
+    /* FOOTER */
+    footer .hidden {
+        display: none;
+    }
+    [id*="footer_side_"] {
+        width: unset;
+    }
+
+    /* FOOTER SIDE LEFT */
+    #footer_side_left .footer_box_theme {
+        margin-left: 10px;
+    }
+
+    /* FOOTER CENTER */
+    #footer_center {
+        flex-grow: 1;
+    }
+    
+    /* FOOTER SIDE RIGHT */
+    #footer_side_right #audio {
+        margin-right: 10px;
     }
 
 }
@@ -566,7 +599,6 @@ footer > div {
     /* FOOTER */
     #footer_center {
         max-width: calc(48% - 10px);
-        margin: 0 5px;
     } 
 
 }
@@ -575,7 +607,6 @@ footer > div {
     /* FOOTER */
     #footer_center {
         max-width: calc(56% - 10px);
-        margin: 0 5px;
     } 
 
 }
@@ -584,7 +615,6 @@ footer > div {
     /* FOOTER */
     #footer_center {
         max-width: calc(54% - 10px);
-        margin: 0 5px;
     } 
 
 }
@@ -593,7 +623,6 @@ footer > div {
     /* FOOTER */
     #footer_center {
         max-width: calc(52% - 10px);
-        margin: 0 5px;
     } 
 
 }
@@ -602,7 +631,6 @@ footer > div {
     /* FOOTER */
     #footer_center {
         max-width: calc(50% - 10px);
-        margin: 0 5px;
     } 
 
 }
@@ -611,7 +639,6 @@ footer > div {
     /* FOOTER */
     #footer_center {
         max-width: calc(48% - 10px);
-        margin: 0 5px;
     } 
 
 }
