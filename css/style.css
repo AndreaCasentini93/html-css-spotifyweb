@@ -158,6 +158,9 @@ header .list_block li a:hover img:not(#img_logo_spotify, #img_logo_spotify_2) {
 #playlist a:hover .fas.fa-plus {
     background-color: #ffffff;
 }
+#playlist .list_block > li:last-child {
+    padding-left: 0;
+}
 #scroll {
     height: 35vh;
     overflow-y: auto;
