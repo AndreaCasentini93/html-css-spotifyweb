@@ -436,16 +436,13 @@ footer > div {
 #footer_center #playback span {
     font-size: 11px;
 }
-#footer_center #playback:hover span {
-    color: #ffffff;
-}
-#footer_center #playback:hover .range {
+#footer_center .range:hover {
     background-color: #c1c1c1;
 }
-#footer_center #playback:hover .range_content {
+#footer_center .range:hover .range_content {
     background-color: #adff2f;
 }
-#footer_center #playback:hover .range_circle {
+#footer_center .range:hover .range_circle {
     opacity: 1;
 }
 #footer_center .range {
