@@ -429,6 +429,7 @@ footer > div {
 #footer_center #playback .range {
     display: inline-block;
     width: 70%;
+    cursor: pointer;
 }
 #footer_center #playback .range_content {
     width: 20%;
@@ -444,9 +445,6 @@ footer > div {
 }
 #footer_center .range:hover .range_circle {
     opacity: 1;
-}
-#footer_center .range {
-    cursor: pointer;
 }
 
 /* FOOTER SIDE RIGHT */
