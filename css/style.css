@@ -73,6 +73,8 @@ button {
     border-radius: 5px;
     margin: 0 10px;
     background-color: #707070;
+    transition: background-color .15s;
+
 }
 .range_content {
     height: 100%;
