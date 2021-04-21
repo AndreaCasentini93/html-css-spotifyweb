@@ -377,6 +377,7 @@ footer > div {
     text-decoration: none;
     font-size: 11px;
     color: #707070;
+    transition: color .2s;
 }
 #footer_side_left a:hover {
     text-decoration: underline;
@@ -385,6 +386,7 @@ footer > div {
 #footer_side_left button {
     margin: 0 5px;
     font-size: 15px;
+    transition: color .2s;
 }
 #footer_side_left button:hover {
     color: #ffffff;
@@ -451,6 +453,7 @@ footer > div {
 }
 #footer_side_right button {
     color: #c1c1c1;
+    transition: color .2s;
 }
 #footer_side_right button:hover {
     color: #ffffff;
