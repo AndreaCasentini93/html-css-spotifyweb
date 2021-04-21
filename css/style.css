@@ -366,8 +366,6 @@ footer > div {
 #footer_side_left .footer_box_text {
     flex-direction: column;
     justify-content: center;
-}
-#footer_side_left .footer_box_text {
     font-size: 13px;
     white-space: nowrap;
 }
@@ -502,12 +500,10 @@ footer > div {
     
     /* MAIN */
 
-    /* MAIN PRINCIPAL SECTION */
+    /* MAIN BOX IMAGE */
     #principal_section .far.fa-play-circle {
         font-size: 95px;
     }
-
-    /* MAIN BOX IMAGE */
     #principal_section .box_img {
         width: calc((100% / 2) - 16px);
     }
@@ -636,7 +632,7 @@ footer > div {
 
     /* MAIN */
 
-    /* MAIN PRINCIPAL SECTION */
+    /* MAIN BOX IMAGE */
     #principal_section .far.fa-play-circle {
         font-size: 60px;
     }
@@ -680,7 +676,7 @@ footer > div {
         font-size: 10px;
     }
 
-    /* MAIN PRINCIPAL SECTION */
+    /* MAIN BOX IMAGE */
     #principal_section h2 {
         font-size: 18px;
         margin-bottom: 8px;
