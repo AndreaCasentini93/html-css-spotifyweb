@@ -517,7 +517,7 @@ footer > div {
 
     /* FOOTER */
     #footer_center {
-        max-width: calc(48% - 10px);
+        max-width: calc(58% - 10px);
         margin: 0 5px;
     } 
     #footer_side_left .footer_box_button {
