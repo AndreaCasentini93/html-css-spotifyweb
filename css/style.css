@@ -308,6 +308,7 @@ main {
     margin-left: 0;
 }
 #principal_section .box_img img {
+    display: block;
     width: 100%;
     transition: opacity .3s;
 }
